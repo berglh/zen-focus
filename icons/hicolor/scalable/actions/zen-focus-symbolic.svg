@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16" height="16" version="1.1" viewBox="0 0 4.2333 4.2333" xmlns="http://www.w3.org/2000/svg">
+ <g display="none" fill="#ff7b63">
+  <g stroke-width="1.7558">
+   <rect transform="matrix(0 1 -.70711 .70711 0 0)" x="2.4369" y="-1.7244" width="1.7981" height="1.7219"/>
+   <rect transform="matrix(1 0 .70711 -.70711 0 0)" x="4.235" y="-5.9868" width="1.7981" height="1.7219"/>
+   <rect transform="matrix(-1 0 -.70711 -.70711 0 0)" x="-1.7998" y="-1.7219" width="1.7981" height="1.7219"/>
+   <rect transform="matrix(0 1 .70711 .70711 0 0)" x="-1.7998" y="4.2673" width="1.7981" height="1.7219"/>
+  </g>
+  <rect transform="scale(-1)" x="-2.6458" y="-2.6458" width="1.0583" height="1.0583" stroke-width="1.2668"/>
+  <path d="m0.69861 1.2177-0.69861 0.69851 3.3076e-6 -0.69851v-0.6987l0.6986 0.69861z" stroke-width=".83628"/>
+  <path d="m3.0174 3.5363 0.69874 0.69883-0.69874-3.2e-6h-0.69893l0.69883-0.69883z" stroke-width=".83655"/>
+  <path d="m4.2333 1.3819e-4 -1.301e-4 1.9125-1.9126-1.9127 1.9126 3.9801e-6z" stroke-width="1.619"/>
+ </g>
+ <g>
+  <g stroke-width="1.7558">
+   <path transform="matrix(0 1 -.70711 .70711 0 0)" d="m2.4371-1.7247-5.168e-4 1.7225h1.7983l1.7983-2.5432v-1.7218l-1.7978 2.5425h-1.7983z" fill-opacity=".5"/>
+   <rect transform="matrix(-1 0 -.70711 -.70711 0 0)" x="-1.7998" y="-1.7219" width="1.7981" height="1.7219" fill-opacity=".6"/>
+   <rect transform="matrix(0 1 .70711 .70711 0 0)" x="-1.7998" y="4.2673" width="1.7981" height="1.7219" fill-opacity=".6"/>
+  </g>
+  <rect transform="scale(-1)" x="-2.6458" y="-2.6458" width="1.0583" height="1.0583" fill-opacity=".8" stroke-width="1.2668"/>
+  <path d="m0.69861 1.2177-0.69861 0.69851 3.3076e-6 -0.69851v-0.6987l0.6986 0.69861z" fill-opacity=".3" stroke-width=".83628"/>
+  <path d="m3.0174 3.5363 0.69874 0.69883-0.69874-3.2e-6h-0.69893l0.69883-0.69883z" fill-opacity=".3" stroke-width=".83655"/>
+  <path d="m4.2333 1.3819e-4 -1.301e-4 1.9125-1.9126-1.9127 1.9126 3.9801e-6z" fill-opacity=".7" stroke-width="1.619"/>
+ </g>
+</svg>
