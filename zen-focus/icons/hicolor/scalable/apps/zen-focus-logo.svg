@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg5" width="192" height="192" version="1.1" viewBox="0 0 4.2333 4.2333" xmlns="http://www.w3.org/2000/svg">
+ <path id="fg4" d="m1.2196 1.2175-1.218 1.2175v1.7983l1.7983-2.22e-5 1.2175-1.2175-1.7978 2.72e-5v-1.7983z" fill-opacity=".8" stroke-width="1.4764"/>
+ <path id="fg3" d="m3.0174 3.5363 0.69874 0.69883-0.69874-3.2e-6h-0.69893l0.69883-0.69883z" fill-opacity=".5" stroke-width=".83655"/>
+ <path id="fg2" d="m0.69861 1.2177-0.69861 0.69851 3.3076e-6 -0.69851v-0.6987l0.6986 0.69861z" fill-opacity=".5" stroke-width=".83628"/>
+ <rect id="fg1" transform="scale(-1)" x="-2.6458" y="-2.6458" width="1.0583" height="1.0583" fill-opacity=".9" stroke-width="1.2668"/>
+ <rect id="bg3" transform="matrix(0 1 .70711 .70711 0 0)" x="-1.7998" y="4.2673" width="1.7981" height="1.7219" fill="#ff7800" fill-opacity=".85" stroke-width="1.7558"/>
+ <path id="bg2" d="m4.2333 1.3819e-4 -1.301e-4 1.9125-1.9126-1.9127 1.9126 3.9801e-6z" fill="#ff7800" fill-opacity=".9" stroke-width="1.619"/>
+ <rect id="bg1" transform="matrix(-1 0 -.70711 -.70711 0 0)" x="-1.7998" y="-1.7219" width="1.7981" height="1.7219" fill="#ff7800" fill-opacity=".85" stroke-width="1.7558"/>
+</svg>

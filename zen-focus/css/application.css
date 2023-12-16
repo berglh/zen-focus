@@ -96,8 +96,20 @@ navigation-split-view navigation-view-page toolbarview list {
 
 /* ### Content Pane ### */
 
-/* 
-navigation-split-view widget.content-pane {
-    background-color: @view_bg_color;
+navigation-split-view widget.content-pane label.title {
+    font-weight: 500;
 }
-*/
+
+navigation-split-view widget.sidebar-pane revealer.top-bar {
+    font-weight: 700;
+}
+
+/* ### Named Colors ### */
+.cc_card_fg_color {
+    color: @theme_text_color;
+}
+
+.cc_theme_selected_bg_color {
+    color: @theme_selected_bg_color;
+}
+
