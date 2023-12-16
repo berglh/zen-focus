@@ -20,7 +20,7 @@ Many changes have been made to the initial GUI prototype:
 
 Video:
 
-
+https://github.com/berglh/zen-focus/assets/12455338/b4e92756-8880-4df2-83a7-e588521c5f43
 
 ## Testing
 
