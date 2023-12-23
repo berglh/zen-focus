@@ -19,7 +19,7 @@ class About():
         self.accent_bg_color = self.get_color('theme_selected_bg_color')
 
         # Load the SVG file using librsvg
-        self.svg_data = Rsvg.Handle.new_from_file('zen-focus/icons/hicolor/scalable/apps/zen-focus-logo.svg')
+        self.svg_data = Rsvg.Handle.new_from_file('icons/hicolor/scalable/apps/zen-focus-logo.svg')
 
         # Set the SVG colours to the theme colours
         # Check: print(self.accent_fg_color, self.accent_bg_color)

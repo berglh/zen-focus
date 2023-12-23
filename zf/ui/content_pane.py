@@ -57,6 +57,6 @@ class Content(Adw.NavigationPage):
 
         # Temperature is unable to resolve the Application object before the content pane is first created
         # So the content pane is passed as an argument to the set_content method
-        self.set_title("Temperature Usage")
+        self.set_title("Temperature")
         temp = Temperature()
         temp.set_content(None, self)

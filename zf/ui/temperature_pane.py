@@ -2,7 +2,7 @@ from gi.repository import Gtk, Gio
 
 class Temperature():
     """
-    Temperature class defines the Temperature Usage content pane
+    Temperature class defines the Temperature content pane
 
     It generates the structure in memory to apply to the navigation split view
     """
@@ -14,7 +14,7 @@ class Temperature():
         self.content_box = Gtk.Box()
         self.content_box.set_halign(Gtk.Align.CENTER)
         self.content_box.set_valign(Gtk.Align.CENTER)
-        self.content_box.append(Gtk.Label(label='Temperature Content'))
+        self.content_box.append(Gtk.Label(label='Temperature'))
 
         self.scrolled_window.set_child(self.content_box)
 
@@ -24,6 +24,6 @@ class Temperature():
         """
         if content == None:
             content = Gio.Application.get_default().split_view.get_content()
-            content.set_title("Temperature Usage")
+            content.set_title("Temperature")
         content.pane.set_content(self.scrolled_window)
         content.pane.set_reveal_bottom_bars(True)

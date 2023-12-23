@@ -29,7 +29,7 @@ class Application(Adw.Application):
 
         ## GTK UI CSS Provider
         self.css = Gtk.CssProvider()
-        self.css.load_from_path('zen-focus/css/application.css')
+        self.css.load_from_path('css/application.css')
         Gtk.StyleContext.add_provider_for_display(
             Gdk.Display.get_default(),
             self.css,
@@ -42,7 +42,7 @@ class Application(Adw.Application):
 
         # The breakpoint is used to hide the sidebar when the window is resized
         self.breakpoint = Adw.Breakpoint.new(
-            condition=Adw.BreakpointCondition.parse('max-width: 400px')
+            condition=Adw.BreakpointCondition.parse('max-width: 450px')
         )
         self.breakpoint.add_setter(self.split_view, property="collapsed", value=True)
         self.window.add_breakpoint(self.breakpoint)

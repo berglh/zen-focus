@@ -27,13 +27,13 @@ class Sidebar(Adw.NavigationPage):
         self.set_vexpand(True)
 
         # Set menu bar min width
-        self.set_size_request(210, -1)
+        self.set_size_request(220, -1)
 
         # Define sidebar header box
         self.header_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=6)
 
         self.theme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default())
-        self.theme.add_search_path(path='./zen-focus/icons')
+        self.theme.add_search_path(path='icons')
 
         self.header_logo = Gtk.Image.new_from_icon_name("zen-focus-symbolic")
         self.header_label = Gtk.Label(label="Zen Focus")
@@ -79,6 +79,9 @@ class Sidebar(Adw.NavigationPage):
         self.list.set_margin_end(6)
         self.list.set_selection_mode(Gtk.SelectionMode.SINGLE)
 
+        # Connect the signal
+        self.list.connect("row-activated", self.on_row_activated)
+
         # The sidebar list items to render as buttons
         # These need to be defined in the sidebar class otherwise the
         # the primary Adw.ApplicationWindow and settings is undefined
@@ -110,8 +113,8 @@ class Sidebar(Adw.NavigationPage):
                 css_classes=['action-row-rounded']
             )
             button.set_focus_on_click(True)
-            button.set_can_focus(True)  
-            button.connect("activated", k.pane.set_content) 
+            button.set_can_focus(True)
+            button.connect("activated", self.on_button_activated, k.pane)
             self.list.append(
                 button
             )
@@ -124,18 +127,27 @@ class Sidebar(Adw.NavigationPage):
                 title=k.title,
                 icon_name=k.icon,
                 margin_bottom=0,
-                margin_top=0, 
+                margin_top=0,
                 css_classes=['action-row-rounded']
             )
             button.set_focus_on_click(True)
             button.set_can_focus(True)  
-            button.connect("activated", k.pane.set_content)
+            button.connect("activated", self.on_button_activated, k.pane)
             self.list.append(
                 button
             )
 
         # Assign the list to the sidebar
         self.toolbar.set_content(self.list)
+
+    def on_button_activated(self, button, content):
+        """
+        Set the content of the content pane when a button is clicked
+        """
+        content.set_content(button)
+
+    def on_row_activated(self, list_box, row):
+        self.application.split_view.set_property("show-content", True)
 
     def on_split_view_folded(self, split_view, allocation, button):
         """
